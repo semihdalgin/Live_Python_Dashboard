@@ -70,7 +70,7 @@ def get_signups(data, start, end):
 
 
 
-data = pd.read_csv('data.csv')
+data = pd.read_csv('/Users/semihdalgin/Desktop/coding/Live_Python_Dashboard/Files/data.csv')
 gender_distribution = get_distribution(data, 'Gender')
 country_distribution = get_distribution(data, 'Country')
 dates, signups_distribution = get_signups(data['Sign Up Date'].tolist(), dt.datetime(2020, 1, 1), dt.datetime(2022,1,1))
